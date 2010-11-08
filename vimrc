@@ -56,7 +56,15 @@ nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 " Alternate exit from insert mode
 inoremap jj <ESC>
 
+""""""""""
+" Plugins
+
+" Command-T
+let g:CommandTMaxHeight = 32
+
+" Ack
 nnoremap <leader>a :Ack 
 
+" NERDTree
 nmap <silent> <leader>n :NERDTreeToggle<CR>
 
