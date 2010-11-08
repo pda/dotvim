@@ -44,20 +44,9 @@ set cursorline
 set ttyfast
 set laststatus=2
 
-" lets see how this goes...
-" normal mode
-"nnoremap <up> <nop>
-"nnoremap <down> <nop>
-"nnoremap <left> <nop>
-"nnoremap <right> <nop>
-"" insert mode
-"inoremap <up> <nop>
-"inoremap <down> <nop>
-"inoremap <left> <nop>
-"inoremap <right> <nop>
-"" Make j & k sane, instead of archaic “movement by file line instead of screen line”
-"nnoremap j gj
-"nnoremap k gk
+" Make j & k sane, instead of archaic “movement by file line instead of screen line”
+nnoremap j gj
+nnoremap k gk
 " save on losing focus
 autocmd FocusLost \f\+ :wa
 " Strip trailing whitespace
