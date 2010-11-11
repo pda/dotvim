@@ -6,6 +6,7 @@ set tabstop=4 shiftwidth=4
 set smartindent
 " Ruby whitespace: two spaces, no tabs
 autocmd FileType ruby setlocal sts=2 ts=2 sw=2 et
+autocmd FileType cucumber setlocal sts=2 ts=2 sw=2 et
 
 " highlight trailing whitespace etc
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
@@ -63,7 +64,7 @@ inoremap jj <ESC>
 let g:CommandTMaxHeight = 32
 
 " Ack
-nnoremap <leader>a :Ack 
+nnoremap <leader>a :Ack
 
 " NERDTree
 nmap <silent> <leader>n :NERDTreeToggle<CR>
