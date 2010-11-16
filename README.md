@@ -1,11 +1,13 @@
 ~pda/.vim/
 ==========
 
-My MacVim setup, coloured in [ir_black][1], with [Command-T][2], [NERDTree][3], geared towards writing Ruby, Rails and PHP.
+My MacVim setup, coloured in [ir_black][1], with [Command-T][2], [NERDTree][3], [Buffer Explorer][4] and more.
+Geared towards writing Ruby, Rails and PHP.
 
   [1]: http://blog.infinitered.com/entries/show/8
   [2]: https://wincent.com/products/command-t
   [3]: http://www.vim.org/scripts/script.php?script_id=1658
+  [4]: http://www.vim.org/scripts/script.php?script_id=42
 
 
 Install.
