@@ -22,6 +22,9 @@ Install.
 	ln -s .vim/vimrc .vimrc
 	ln -s .vim/gvimrc .gvimrc
 
+	# misc setup
+	mkdir ~/.vim/swap
+
 Background.
 -----------
 
