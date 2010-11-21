@@ -2,6 +2,10 @@ set nocompatible " vi is dead, long live vim
 
 set background=dark
 colorscheme ir_black
+
+" Enable mouse in xterm etc.
+set mouse=a
+
 set number
 set tabstop=4 shiftwidth=4
 set smartindent
