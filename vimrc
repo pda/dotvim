@@ -1,5 +1,6 @@
 set nocompatible " vi is dead, long live vim
 
+set background=dark
 colorscheme ir_black
 set number
 set tabstop=4 shiftwidth=4
