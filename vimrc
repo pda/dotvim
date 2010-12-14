@@ -68,8 +68,8 @@ inoremap jj <ESC>
 " Command-T
 let g:CommandTMaxHeight = 16
 
-" Ack
-nnoremap <leader>a :Ack
+" Ack (deliberate trailing whitespace)
+nnoremap <leader>a :Ack 
 
 " NERDTree
 nmap <silent> <leader>n :NERDTreeToggle<CR>
