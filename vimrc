@@ -66,7 +66,7 @@ inoremap jj <ESC>
 " Plugins
 
 " Command-T
-let g:CommandTMaxHeight = 32
+let g:CommandTMaxHeight = 16
 
 " Ack
 nnoremap <leader>a :Ack
