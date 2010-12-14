@@ -62,6 +62,9 @@ nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 " Alternate exit from insert mode
 inoremap jj <ESC>
 
+" auto-reload .vimrc after save.
+autocmd! bufwritepost .vimrc source %
+
 """"""""""
 " Plugins
 
