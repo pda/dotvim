@@ -62,6 +62,10 @@ nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 " Alternate exit from insert mode
 inoremap jj <ESC>
 
+" http://stackoverflow.com/questions/2968548
+" A bug prevents this from working: autocmd FocusLost * stopinsert
+autocmd! FocusLost * call feedkeys("\<C-\>\<C-n>")
+
 " auto-reload .vimrc after save.
 autocmd! bufwritepost .vimrc source %
 
