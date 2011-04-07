@@ -1,69 +1,102 @@
-set nocompatible " vi is dead, long live vim
+" Pathogen: manage plugins in separate directories by manipulating runtimepath.
+filetype off
+call pathogen#runtime_append_all_bundles()
+filetype plugin indent on
 
+" Color scheme
 set background=dark
 colorscheme ir_black
 
-" Enable mouse in xterm etc.
-set mouse=a
+" vi is dead, long live vim
+set nocompatible
 
+" Show line numbers
 set number
-set tabstop=4 shiftwidth=4
+
+" Visual width of tabs
+set tabstop=2 shiftwidth=2
+
+" Smart indenting when starting new line
 set smartindent
+
 " Ruby whitespace: two spaces, no tabs
 autocmd FileType ruby setlocal sts=2 ts=2 sw=2 et
 autocmd FileType cucumber setlocal sts=2 ts=2 sw=2 et
 
-" highlight trailing whitespace etc
+" Highlight trailing whitespace etc
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+\%#\@<!$/
 
-" see http://items.sjbach.com/319/configuring-vim-right
-" essential
-set hidden
-runtime macros/matchit.vim
-set wildmenu
-set wildmode=list:longest
-" recommended
-set ignorecase
-set smartcase
-set scrolloff=3
-set backupdir=~/.vim/swap
-set directory=~/.vim/swap
-set ruler
-set visualbell
-" The following will make tabs and trailing spaces visible when requested
+" Make tabs and trailing spaces visible when requested
 set listchars=tab:>-,trail:·,eol:$
 nmap <silent> <leader>s :set nolist!<CR>
+
+" Strip trailing whitespace
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+
+" Something to do with editing multiple files..?
+set hidden
+
+" Jump to matching HTML tag, if/else/endif etc using "%"
+runtime macros/matchit.vim
+
+" Navigatable tab completion from Vim command line
+set wildmenu
+set wildmode=list:longest
+
+" Ignore case in searches, unless search contains upper case
+set ignorecase
+set smartcase
+
+" Minimum number of lines to keep above/below cursor when scolling
+set scrolloff=3
+
+" Swap files in a central location, no swap files amongst project.
+" Can be a bad idea when editing several files of the same name.
+set backupdir=~/.vim/swap
+set directory=~/.vim/swap
+
+" Show line and column number, relative scroll position etc.
+set ruler
+
+" Use visual bell instead of beeping.
+set visualbell
+
 " short info tokens, short command line messages, no intro.
 set shortmess=atI
 
-" see http://stevelosh.com/blog/2010/09/coming-home-to-vim/
-filetype off
-filetype plugin indent on
+" Number of commands remembered.
 set history=1000
-" Prevent exploits re modelines in files.
+
+" Disable modelines; not used, risk of security exploits.
 set modelines=0
-" Make things better
+
+" Default to Unicode/UTF-8 rather than latin1
 set encoding=utf-8
+
+" Highlight the screen line of the cursor, easier to find the cursor.
 set cursorline
+
+" Terminals are plenty fast these days.
 set ttyfast
+
+" The last window will have a status line: always.
 set laststatus=2
 
 " Make j & k sane, instead of archaic “movement by file line instead of screen line”
 nnoremap j gj
 nnoremap k gk
+
 " save on losing focus
 autocmd FocusLost \f\+ :wa
-" Strip trailing whitespace
-nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+
 " Quick-edit .vimrc
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
-" Alternate exit from insert mode
-inoremap jj <ESC>
 
-" http://stackoverflow.com/questions/2968548
+" Exit insert mode when Vim loses focus.
 " A bug prevents this from working: autocmd FocusLost * stopinsert
+" See http://stackoverflow.com/questions/2968548
 autocmd! FocusLost * call feedkeys("\<C-\>\<C-n>")
 
 " auto-reload .vimrc after save.
@@ -76,8 +109,13 @@ autocmd! bufwritepost .vimrc source %
 let g:CommandTMaxHeight = 16
 
 " Ack (deliberate trailing whitespace)
-nnoremap <leader>a :Ack 
+" nnoremap <leader>a :Ack 
 
 " NERDTree
 nmap <silent> <leader>n :NERDTreeToggle<CR>
 
+" checksyntax: auto-check Ruby files on save.
+if !exists('g:checksyntax')
+	let g:checksyntax = {}
+	let g:checksyntax['ruby'] = {'auto': 1, 'prepare': 'compiler ruby', 'cmd': 'ruby -c', 'okrx': 'Syntax OK\|No Errors'}
+endif
