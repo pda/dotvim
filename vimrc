@@ -107,3 +107,6 @@ autocmd! bufwritepost .vimrc source %
 
 " Command-T
 let g:CommandTMaxHeight = 16
+
+" NERDTree
+nmap <silent> <leader>n :NERDTreeToggle<CR>
