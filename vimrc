@@ -101,3 +101,9 @@ autocmd! FocusLost * call feedkeys("\<C-\>\<C-n>")
 
 " auto-reload .vimrc after save.
 autocmd! bufwritepost .vimrc source %
+
+""""""""""
+" Plugins
+
+" Command-T
+let g:CommandTMaxHeight = 16
