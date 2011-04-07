@@ -5,6 +5,7 @@ filetype plugin indent on
 
 " Color scheme
 set background=dark
+colorscheme ir_black
 
 " vi is dead, long live vim
 set nocompatible
