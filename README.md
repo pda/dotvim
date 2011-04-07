@@ -38,4 +38,4 @@ Some posts that helped me along the way:
 Bam.
 ----
 
-[<img src="https://github.com/pda/dotvim/raw/master/documentation/vim_ir_black_sc1.png"/>](http://blog.infinitered.com/entries/show/8)
+[<img src="https://github.com/pda/dotvim/raw/master/screenshot.png"/>](http://blog.infinitered.com/entries/show/8)
