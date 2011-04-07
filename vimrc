@@ -113,3 +113,9 @@ let g:CommandTMaxHeight = 16
 
 " NERDTree
 nmap <silent> <leader>n :NERDTreeToggle<CR>
+
+" checksyntax: auto-check Ruby files on save.
+if !exists('g:checksyntax')
+	let g:checksyntax = {}
+	let g:checksyntax['ruby'] = {'auto': 1, 'prepare': 'compiler ruby', 'cmd': 'ruby -c', 'okrx': 'Syntax OK\|No Errors'}
+endif
