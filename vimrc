@@ -22,6 +22,7 @@ set smartindent
 " Ruby whitespace: two spaces, no tabs
 autocmd FileType ruby setlocal sts=2 ts=2 sw=2 et
 autocmd FileType cucumber setlocal sts=2 ts=2 sw=2 et
+autocmd FileType scss setlocal sts=2 ts=2 sw=2 et
 
 " Highlight trailing whitespace etc
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
