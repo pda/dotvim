@@ -16,3 +16,6 @@
 [submodule "bundle/checksyntax"]
 	path = bundle/checksyntax
 	url = git://github.com/tomtom/checksyntax_vim.git
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = git://github.com/tpope/vim-fugitive.git
