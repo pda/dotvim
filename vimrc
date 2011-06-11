@@ -107,7 +107,7 @@ autocmd! FocusLost * call feedkeys("\<C-\>\<C-n>")
 autocmd! bufwritepost .vimrc source %
 
 " Unbind the cursor keys in insert, normal and visual modes.
-for prefix in ['i', 'n', 'v']
+for prefix in ['n', 'v']
   for key in ['<Up>', '<Down>', '<Left>', '<Right>']
     exe prefix . "noremap " . key . " <Nop>"
   endfor
