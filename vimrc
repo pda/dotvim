@@ -39,7 +39,7 @@ nmap <silent> <leader>s :set nolist!<CR>
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " Convert to Ruby 1.9 hash syntax
-noremap <leader>9 :s/:\(\S\+\) =>/\1:/g<cr>
+noremap <leader>9 :s/:\(\S\+\)\(\s\+\)=>/\1:\2/g<cr>
 
 " Something to do with editing multiple files..?
 set hidden
