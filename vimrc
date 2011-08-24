@@ -126,6 +126,7 @@ nmap <Right> <C-W><Right>
 
 " Command-T
 let g:CommandTMaxHeight = 16
+set wildignore+=tmp/*,coverage/*
 
 " Ack (deliberate trailing whitespace)
 " nnoremap <leader>a :Ack 
