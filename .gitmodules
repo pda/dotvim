@@ -25,3 +25,6 @@
 [submodule "bundle/textobj-rubyblock"]
 	path = bundle/textobj-rubyblock
 	url = git://github.com/nelstrom/vim-textobj-rubyblock.git
+[submodule "bundle/hammer"]
+	path = bundle/hammer
+	url = git://github.com/robgleeson/hammer.vim.git
