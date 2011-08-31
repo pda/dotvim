@@ -21,7 +21,14 @@ set tabstop=2 shiftwidth=2
 " Smart indenting when starting new line
 set smartindent
 
+" Indent with two spaces
+set expandtab
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+
 " Ruby whitespace: two spaces, no tabs
+" (currently matches global config, remains as reference)
 autocmd FileType ruby setlocal sts=2 ts=2 sw=2 et
 autocmd FileType cucumber setlocal sts=2 ts=2 sw=2 et
 autocmd FileType scss setlocal sts=2 ts=2 sw=2 et
