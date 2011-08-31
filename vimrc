@@ -151,3 +151,6 @@ endif
 " empty statusline is equivalent to:
 " set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 set statusline=%<%f\ %{fugitive#statusline()}\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+
+" Hammer
+map <leader>h :Hammer<cr>
