@@ -38,6 +38,10 @@ highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+\%#\@<!$/
 
+" Leader of '\' is too far from home row.
+let mapleader = ";"
+let g:mapleader = ";"
+
 " Make tabs and trailing spaces visible when requested
 set listchars=tab:>-,trail:·,eol:$
 nmap <silent> <leader>s :set nolist!<CR>
