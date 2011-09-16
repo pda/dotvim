@@ -33,6 +33,9 @@ autocmd FileType ruby setlocal sts=2 ts=2 sw=2 et
 autocmd FileType cucumber setlocal sts=2 ts=2 sw=2 et
 autocmd FileType scss setlocal sts=2 ts=2 sw=2 et
 
+" Default assembler syntax
+let asmsyntax = "nasm"
+
 " Highlight trailing whitespace etc
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
