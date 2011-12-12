@@ -136,6 +136,11 @@ nmap <Down> <C-W><Down>
 nmap <Left> <C-W><Left>
 nmap <Right> <C-W><Right>
 
+" Mapping and escape timeouts.
+set timeout
+set timeoutlen=1000 " mapped sequences
+set ttimeoutlen=10  " escape sequence delay
+
 """"""""""
 " Plugins
 
