@@ -155,6 +155,10 @@ let g:ctrlp_custom_ignore = ''
 let g:ctrlp_custom_ignore .= '/\..*/\|'
 let g:ctrlp_custom_ignore .= '/tmp/\|'
 let g:ctrlp_custom_ignore .= 'REGEX_TERMINATOR'
+nnoremap <leader>gs :CtrlP spec/<cr>
+nnoremap <leader>gm :CtrlP app/models/<cr>
+nnoremap <leader>gv :CtrlP app/views/<cr>
+nnoremap <leader>gc :CtrlP app/controllers/<cr>
 
 " Ack (deliberate trailing whitespace)
 " nnoremap <leader>a :Ack 
