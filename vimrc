@@ -149,13 +149,6 @@ set clipboard=unnamed
 """"""""""
 " Plugins
 
-" Command-T
-let g:CommandTMaxHeight = 16
-set wildignore+=tmp/*,coverage/*
-nnoremap <leader>gs :CommandT spec/<cr>
-nnoremap <leader>gm :CommandT app/models/<cr>
-nnoremap <leader>gv :CommandT app/views/<cr>
-nnoremap <leader>gc :CommandT app/controllers/<cr>
 
 " Ack (deliberate trailing whitespace)
 " nnoremap <leader>a :Ack 
