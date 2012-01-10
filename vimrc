@@ -144,6 +144,8 @@ set timeout
 set timeoutlen=1000 " mapped sequences
 set ttimeoutlen=10  " escape sequence delay
 
+set clipboard=unnamed
+
 """"""""""
 " Plugins
 
