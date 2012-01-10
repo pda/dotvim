@@ -151,6 +151,10 @@ set clipboard=unnamed
 
 " ctrlp.vim
 let g:ctrlp_max_height = 16
+let g:ctrlp_custom_ignore = ''
+let g:ctrlp_custom_ignore .= '/\..*/\|'
+let g:ctrlp_custom_ignore .= '/tmp/\|'
+let g:ctrlp_custom_ignore .= 'REGEX_TERMINATOR'
 
 " Ack (deliberate trailing whitespace)
 " nnoremap <leader>a :Ack 
