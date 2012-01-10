@@ -149,6 +149,8 @@ set clipboard=unnamed
 """"""""""
 " Plugins
 
+" ctrlp.vim
+let g:ctrlp_max_height = 16
 
 " Ack (deliberate trailing whitespace)
 " nnoremap <leader>a :Ack 
