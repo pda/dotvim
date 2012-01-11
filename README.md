@@ -1,27 +1,33 @@
 ~pda/.vim/
 ==========
 
-My MacVim setup, coloured in [ir_black](http://blog.infinitered.com/entries/show/8), with [Command-T](https://wincent.com/products/command-t), [NERDTree](http://www.vim.org/scripts/script.php?script_id=1658), [Buffer Explorer](http://www.vim.org/scripts/script.php?script_id=42) and more.
-Geared towards writing Ruby, Rails, and once upon a time, PHP.
+My ~~MacVim~~ vim setup,
+coloured in [Jellybeans](https://github.com/nanotech/jellybeans.vim) (modified),
+with [ctrlp.vim](http://kien.github.com/ctrlp.vim/),
+[Powerline](https://github.com/Lokaltog/vim-powerline),
+[NERDTree](http://www.vim.org/scripts/script.php?script_id=1658),
+[Buffer Explorer](http://www.vim.org/scripts/script.php?script_id=42)
+and more.
+
+I run it in [tmux](http://tmux.sourceforge.net/)
+inside (non-Lion) full-screen [iTerm2](http://www.iterm2.com/)
+with xterm-256color profile.
 
 
 Install.
 --------
 
-    # backup what you've got
-    mv .vim .vim-backup
-	mv .vimrc .gvimrc .vim-backup
+```
+# backup what you've got
+mv .vim .vim-backup
+mv .vimrc .gvimrc .vim-backup
 
-    # grab from GitHub
-	git clone git://github.com/pda/dotvim.git .vim
+# grab from GitHub
+git clone git://github.com/pda/dotvim.git .vim
 
-    # symlink the rc files into your home directory
-	ln -s .vim/vimrc .vimrc
-	ln -s .vim/gvimrc .gvimrc
-
-	# misc setup
-	cd ~/.vim/bundle/command-t ; rake make
-
+# symlink the rc file into your home directory
+ln -s .vim/vimrc .vimrc
+```
 
 Background.
 -----------
@@ -39,3 +45,5 @@ Bam.
 ----
 
 [<img src="https://github.com/pda/dotvim/raw/master/screenshot.png"/>](http://blog.infinitered.com/entries/show/8)
+
+(Since screenshot, just about everything has changed.)
