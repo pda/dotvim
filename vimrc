@@ -139,6 +139,10 @@ nmap <Right> <C-W><Right>
 " Mouse for scrolling etc in console.
 set mouse=a
 
+" Resize split panes with mouse within tmux.
+" Also get live-updated text selection with mouse drag.
+set ttymouse=xterm2
+
 " Mapping and escape timeouts.
 set timeout
 set timeoutlen=1000 " mapped sequences
