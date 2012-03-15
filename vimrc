@@ -19,9 +19,6 @@ set nocompatible
 " Show line numbers
 set number
 
-" Visual width of tabs
-set tabstop=2 shiftwidth=2
-
 " Smart indenting when starting new line
 set smartindent
 
@@ -31,11 +28,8 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 
-" Ruby whitespace: two spaces, no tabs
-" (currently matches global config, remains as reference)
-autocmd FileType ruby setlocal sts=2 ts=2 sw=2 et
-autocmd FileType cucumber setlocal sts=2 ts=2 sw=2 et
-autocmd FileType scss setlocal sts=2 ts=2 sw=2 et
+" PHP whitespace: tabs, with visual width of 4 characters.
+autocmd FileType php setlocal sts=4 ts=4 sw=4 noexpandtab
 
 " Default assembler syntax
 let asmsyntax = "nasm"
