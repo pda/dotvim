@@ -10,6 +10,9 @@ set background=dark
 colorscheme jellybeans_pda
 syntax enable
 
+" Indicator after 80 characters.
+set colorcolumn=81
+
 " vi is dead, long live vim
 set nocompatible
 
