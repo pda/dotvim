@@ -176,11 +176,6 @@ if !exists('g:checksyntax')
 	let g:checksyntax['ruby'] = {'auto': 1, 'prepare': 'compiler ruby', 'cmd': 'ruby -c', 'okrx': 'Syntax OK\|No Errors'}
 endif
 
-" fugitive: Git integration
-" empty statusline is equivalent to:
-" set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
-set statusline=%<%f\ %{fugitive#statusline()}\ %h%m%r%=%-14.(%l,%c%V%)\ %P
-
 " Hammer
 map <leader>h :Hammer<cr>
 
