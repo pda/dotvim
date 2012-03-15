@@ -28,6 +28,9 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 
+" Allow backspacing over indents and start of insertion point.
+set backspace=indent,start
+
 " PHP whitespace: tabs, with visual width of 4 characters.
 autocmd FileType php setlocal sts=4 ts=4 sw=4 noexpandtab
 
