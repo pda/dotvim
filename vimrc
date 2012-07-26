@@ -151,6 +151,12 @@ set ttimeoutlen=10  " escape sequence delay
 set clipboard=unnamed
 
 """"""""""
+" Abbreviations
+
+abbreviate pry! require "pry"; binding.pry
+
+
+""""""""""
 " Plugins
 
 " ctrlp.vim
