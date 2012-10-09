@@ -182,4 +182,5 @@ endif
 map <leader>h :Hammer<cr>
 
 " Powerline
-let g:Powerline_symbols = 'fancy'
+" Powerline_symbols = 'fancy' requires a patched font.
+" let g:Powerline_symbols = 'fancy'
