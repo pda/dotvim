@@ -90,9 +90,6 @@ set shortmess=atI
 " Number of commands remembered.
 set history=1000
 
-" Disable modelines; not used, risk of security exploits.
-set modelines=0
-
 " Default to Unicode/UTF-8 rather than latin1
 set encoding=utf-8
 
@@ -154,7 +151,6 @@ set clipboard=unnamed
 " Abbreviations
 
 abbreviate pry! require "pry"; binding.pry
-
 
 """"""""""
 " Plugins
