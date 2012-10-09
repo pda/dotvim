@@ -52,3 +52,6 @@
 [submodule "bundle/eunuch"]
 	path = bundle/eunuch
 	url = git://github.com/tpope/vim-eunuch.git
+[submodule "bundle/armasm"]
+	path = bundle/armasm
+	url = git://github.com/vim-scripts/armasm.git

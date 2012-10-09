@@ -35,7 +35,7 @@ set backspace=indent,start
 autocmd FileType php setlocal sts=4 ts=4 sw=4 noexpandtab
 
 " Default assembler syntax
-let asmsyntax = "nasm"
+let asmsyntax = "armasm"
 
 " Highlight trailing whitespace etc
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
