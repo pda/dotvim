@@ -1,11 +1,7 @@
-" Default starting size
-set lines=64 columns=160
-
-" Full-screen options.
-set fuoptions=maxvert,maxhorz
-
 " Set the font.
-set guifont=Menlo:h12
+if has("gui_gnome")
+  set guifont=Inconsolata\ Medium\ 12
+endif
 
 " Hide the toolbar.
 set guioptions-=T
