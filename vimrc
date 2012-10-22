@@ -109,11 +109,6 @@ autocmd FocusLost \f\+ :wa
 " Quick-edit .vimrc
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 
-" Exit insert mode when Vim loses focus.
-" A bug prevents this from working: autocmd FocusLost * stopinsert
-" See http://stackoverflow.com/questions/2968548
-autocmd! FocusLost * call feedkeys("\<C-\>\<C-n>")
-
 " auto-reload .vimrc after save.
 autocmd! bufwritepost .vimrc source %
 
