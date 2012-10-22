@@ -53,9 +53,6 @@ nmap <silent> <leader>s :set nolist!<CR>
 " Strip trailing whitespace
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
-" Convert to Ruby 1.9 hash syntax
-noremap <leader>9 :s/:\(\S\+\)\s\+=>\s\+/\1: /g<cr>
-
 " Something to do with editing multiple files..?
 set hidden
 
@@ -146,6 +143,13 @@ set timeoutlen=1000 " mapped sequences
 set ttimeoutlen=10  " escape sequence delay
 
 set clipboard=unnamed
+
+""""""""""
+" Shortcuts
+
+" Convert to Ruby 1.9 hash syntax
+noremap <leader>9 :s/:\(\S\+\)\s\+=>\s\+/\1: /g<cr>
+
 
 """"""""""
 " Abbreviations
