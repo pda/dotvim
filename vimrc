@@ -141,6 +141,9 @@ set clipboard=unnamed
 " Convert to Ruby 1.9 hash syntax
 noremap <leader>9 :s/:\(\S\+\)\s\+=>\s\+/\1: /g<cr>
 
+noremap <leader>3 <C-w>v<C-w>v
+map <leader>6 <C-w>v<C-w>v<Right><Right><C-w>s<Left><C-w>s<Left><C-w>s
+
 
 """"""""""
 " Abbreviations
