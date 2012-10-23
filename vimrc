@@ -31,12 +31,6 @@ set shiftwidth=2
 " Allow backspacing over indents and start of insertion point.
 set backspace=indent,start
 
-" PHP whitespace: tabs, with visual width of 4 characters.
-autocmd FileType php setlocal sts=4 ts=4 sw=4 noexpandtab
-
-" Default assembler syntax
-let asmsyntax = "armasm"
-
 " Highlight trailing whitespace etc
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
@@ -135,6 +129,17 @@ set ttimeoutlen=10  " escape sequence delay
 
 set clipboard=unnamed
 
+
+""""""""""
+" File types
+
+" PHP whitespace: tabs, with visual width of 4 characters.
+autocmd FileType php setlocal sts=4 ts=4 sw=4 noexpandtab
+
+" Default assembler syntax
+let asmsyntax = "armasm"
+
+
 """"""""""
 " Shortcuts
 
@@ -150,6 +155,7 @@ map <leader>!! :wall \| call Send_to_Tmux("!!\n")<cr>
 " Abbreviations
 
 abbreviate pry! require "pry"; binding.pry
+
 
 """"""""""
 " Plugins
