@@ -99,10 +99,6 @@ set ttyfast
 " The last window will have a status line: always.
 set laststatus=2
 
-" Make j & k sane, instead of archaic “movement by file line instead of screen line”
-nnoremap j gj
-nnoremap k gk
-
 " save on losing focus
 autocmd FocusLost \f\+ :wa
 
