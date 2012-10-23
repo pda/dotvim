@@ -133,12 +133,14 @@ set clipboard=unnamed
 """"""""""
 " File types
 
-" PHP whitespace: tabs, with visual width of 4 characters.
-autocmd FileType php setlocal sts=4 ts=4 sw=4 noexpandtab
-
 " Default assembler syntax
 let asmsyntax = "armasm"
 
+" PHP whitespace: tabs, with visual width of 4 characters.
+autocmd FileType php setlocal sts=4 ts=4 sw=4 noexpandtab
+
+" Flex: lex-style syntax, indentation as 4 spaces.
+autocmd BufRead,BufNewFile *.flex setlocal ft=lex sts=4 ts=4 sw=4 expandtab
 
 """"""""""
 " Shortcuts
