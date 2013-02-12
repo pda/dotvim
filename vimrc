@@ -41,8 +41,8 @@ let mapleader = ";"
 let g:mapleader = ";"
 
 " Make tabs and trailing spaces visible when requested
-set listchars=tab:>-,trail:-,eol:$
-nmap <silent> <leader>s :set nolist!<CR>
+set listchars=tab:>-,trail:-
+nmap <silent> <leader>s :set list!<CR>
 
 " Strip trailing whitespace
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
