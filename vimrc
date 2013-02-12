@@ -148,8 +148,13 @@ autocmd BufRead,BufNewFile *.flex setlocal ft=lex sts=4 ts=4 sw=4 expandtab
 " Convert to Ruby 1.9 hash syntax
 noremap <leader>9 :s/:\(\S\+\)\s\+=>\s\+/\1: /g<cr>
 
+" Split screen into three.
 noremap <leader>3 <C-w>v<C-w>v
+
+" Split screen into 3 x 2 grid.
 map <leader>6 <C-w>v<C-w>v<Right><Right><C-w>s<Left><C-w>s<Left><C-w>s
+
+" Send "!!" to tmux, to repeat last shell command.
 map <leader>!! :wall \| call Send_to_Tmux("!!\n")<cr>
 
 
