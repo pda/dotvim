@@ -47,7 +47,7 @@ nmap <silent> <leader>s :set list!<CR>
 " Strip trailing whitespace
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
-" Something to do with editing multiple files..?
+" Allow unsaved buffers to be hidden (backgrounded).
 set hidden
 
 " Jump to matching HTML tag, if/else/endif etc using "%"
