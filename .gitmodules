@@ -39,7 +39,7 @@
 	url = git://github.com/Lokaltog/vim-powerline.git
 [submodule "bundle/slim"]
 	path = bundle/slim
-	url = git://github.com/bbommarito/vim-slim.git
+	url = git://github.com/slim-template/vim-slim.git
 [submodule "bundle/coffeescript"]
 	path = bundle/coffeescript
 	url = git://github.com/kchmck/vim-coffee-script.git
