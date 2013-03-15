@@ -161,6 +161,10 @@ map <leader>!! :wall \| call Send_to_Tmux("!!\n")<cr>
 map <leader>R :let g:specFile = @% \| echo "RSpec file: " . g:specFile<CR>
 map <leader>r :wall \| :call Send_to_Tmux("rspec -f d " . g:specFile . "\n")<CR>
 
+" Reselect visual block after indent (thanks @twe4ked)
+vnoremap < <gv
+vnoremap > >gv
+
 """"""""""
 " Abbreviations
 
