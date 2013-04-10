@@ -49,3 +49,6 @@
 [submodule "bundle/armasm"]
 	path = bundle/armasm
 	url = git://github.com/vim-scripts/armasm.git
+[submodule "bundle/golang"]
+	path = bundle/golang
+	url = git://github.com/jnwhiteh/vim-golang.git
