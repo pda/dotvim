@@ -199,7 +199,3 @@ if !exists('g:checksyntax')
 	let g:checksyntax = {}
 	let g:checksyntax['ruby'] = {'auto': 1, 'prepare': 'compiler ruby', 'cmd': 'ruby -c', 'okrx': 'Syntax OK\|No Errors'}
 endif
-
-" Powerline
-" Powerline_symbols = 'fancy' requires a patched font.
-" let g:Powerline_symbols = 'fancy'
