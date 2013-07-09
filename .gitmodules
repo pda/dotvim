@@ -52,3 +52,6 @@
 [submodule "bundle/slim"]
 	path = bundle/slim
 	url = git://github.com/slim-template/vim-slim.git
+[submodule "bundle/airline"]
+	path = bundle/airline
+	url = https://github.com/bling/vim-airline

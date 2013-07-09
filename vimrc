@@ -199,3 +199,18 @@ if !exists('g:checksyntax')
 	let g:checksyntax = {}
 	let g:checksyntax['ruby'] = {'auto': 1, 'prepare': 'compiler ruby', 'cmd': 'ruby -c', 'okrx': 'Syntax OK\|No Errors'}
 endif
+
+" Airline
+" https://github.com/bling/vim-airline
+" https://github.com/bling/vim-airline/blob/master/doc/airline.txt
+let g:airline_left_sep = '▚'
+let g:airline_right_sep = '▞'
+let g:airline_mode_map = {
+  \ 'n' : 'N',
+  \ 'i' : 'I',
+  \ 'R' : 'REPLACE',
+  \ 'v' : 'VISUAL',
+  \ 'V' : 'V-LINE',
+  \ 'c' : 'CMD   ',
+  \ '': 'V-BLCK',
+  \ }
