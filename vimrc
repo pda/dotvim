@@ -148,6 +148,9 @@ autocmd BufRead,BufNewFile *.flex setlocal ft=lex sts=4 ts=4 sw=4 expandtab
 " Convert to Ruby 1.9 hash syntax
 noremap <leader>9 :s/:\(\S\+\)\s\+=>\s\+/\1: /g<cr>
 
+" Convert CSS `squished:rule;  ` into `nice: rule;`
+noremap <leader>c :s/^\(\s*\)\([a-z-]\+\):\([^ \t].*\);\s*$/\1\2: \3;/<cr>
+
 " Split screen into three.
 noremap <leader>3 <C-w>v<C-w>v
 
