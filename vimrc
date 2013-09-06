@@ -1,8 +1,5 @@
 " Pathogen: manage plugins in separate directories by manipulating runtimepath.
-" Note: 'filetype off' when already off causes a non-zero exit code from vim.
-filetype on
-filetype off
-call pathogen#infect()
+execute pathogen#infect()
 filetype plugin indent on
 
 " Color scheme
