@@ -91,9 +91,6 @@ set ttyfast
 " The last window will have a status line: always.
 set laststatus=2
 
-" save on losing focus
-autocmd FocusLost \f\+ :wa
-
 " Quick-edit .vimrc
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 
