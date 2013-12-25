@@ -4,9 +4,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/ack.vim"]
-	path = bundle/ack.vim
-	url = git://github.com/mileszs/ack.vim.git
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
 	url = git://github.com/vim-ruby/vim-ruby.git
@@ -40,21 +37,15 @@
 [submodule "bundle/coffeescript"]
 	path = bundle/coffeescript
 	url = git://github.com/kchmck/vim-coffee-script.git
-[submodule "bundle/commentary"]
-	path = bundle/commentary
-	url = git://github.com/tpope/vim-commentary.git
 [submodule "bundle/eunuch"]
 	path = bundle/eunuch
 	url = git://github.com/tpope/vim-eunuch.git
-[submodule "bundle/armasm"]
-	path = bundle/armasm
-	url = git://github.com/vim-scripts/armasm.git
 [submodule "bundle/golang"]
 	path = bundle/golang
 	url = git://github.com/jnwhiteh/vim-golang.git
-[submodule "bundle/slim"]
-	path = bundle/slim
-	url = git://github.com/slim-template/vim-slim.git
 [submodule "bundle/airline"]
 	path = bundle/airline
 	url = https://github.com/bling/vim-airline
+[submodule "bundle/arduino-syntax"]
+	path = bundle/arduino-syntax
+	url = git://github.com/sudar/vim-arduino-syntax
