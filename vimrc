@@ -97,9 +97,6 @@ autocmd FocusLost \f\+ :wa
 " Quick-edit .vimrc
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 
-" auto-reload .vimrc after save.
-autocmd! bufwritepost .vimrc source %
-
 " Unbind the cursor keys in insert, normal and visual modes.
 for prefix in ['n', 'v']
   for key in ['<Up>', '<Down>', '<Left>', '<Right>']
