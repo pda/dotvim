@@ -1,12 +1,22 @@
-" Pathogen: manage plugins in separate directories by manipulating runtimepath.
+""""""""""
+" Pathogen:
+" Manage plugins in separate directories by manipulating runtimepath.
+" https://github.com/tpope/vim-pathogen
 runtime bundle/pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 filetype plugin indent on
 
+
+""""""""""
 " Color scheme
+
 set background=dark
 colorscheme jellybeans_pda
 syntax enable
+
+
+""""""""""
+" Settings
 
 " Indicator after 80 characters.
 set colorcolumn=81
@@ -34,16 +44,8 @@ highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+\%#\@<!$/
 
-" Leader of '\' is too far from home row.
-let mapleader = ";"
-let g:mapleader = ";"
-
-" Make tabs and trailing spaces visible when requested
+" Make tabs and trailing spaces visible when `list` is set.
 set listchars=tab:>-,trail:-
-nmap <silent> <leader>s :set list!<CR>
-
-" Strip trailing whitespace
-nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " Allow unsaved buffers to be hidden (backgrounded).
 set hidden
@@ -91,28 +93,13 @@ set ttyfast
 " The last window will have a status line: always.
 set laststatus=2
 
-" Quick-edit .vimrc
-nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
-
-" Unbind the cursor keys in insert, normal and visual modes.
-for prefix in ['n', 'v']
-  for key in ['<Up>', '<Down>', '<Left>', '<Right>']
-    exe prefix . "noremap " . key . " <Nop>"
-  endfor
-endfor
-
-" Arrow keys navigate split windows!
-nmap <Up> <C-W><Up>
-nmap <Down> <C-W><Down>
-nmap <Left> <C-W><Left>
-nmap <Right> <C-W><Right>
-
 " Mouse for scrolling etc in console.
 " a = normal + visual + insert + command-line + help files
 set mouse=a
 
 " Resize split panes with mouse within tmux.
 " Also get live-updated text selection with mouse drag.
+" xterm2: like xterm, plus report position during drag.
 set ttymouse=xterm2
 
 " Mapping and escape timeouts.
@@ -136,8 +123,35 @@ autocmd FileType php setlocal sts=4 ts=4 sw=4 expandtab
 " Flex: lex-style syntax, indentation as 4 spaces.
 autocmd BufRead,BufNewFile *.flex setlocal ft=lex sts=4 ts=4 sw=4 expandtab
 
+
 """"""""""
-" Shortcuts
+" Keyboard and Shortcuts
+
+" Leader of '\' is too far from home row.
+let mapleader = ";"
+let g:mapleader = ";"
+
+" Unbind the cursor keys in insert, normal and visual modes.
+for prefix in ['n', 'v']
+  for key in ['<Up>', '<Down>', '<Left>', '<Right>']
+    exe prefix . "noremap " . key . " <Nop>"
+  endfor
+endfor
+
+" Arrow keys navigate split windows!
+nmap <Up> <C-W><Up>
+nmap <Down> <C-W><Down>
+nmap <Left> <C-W><Left>
+nmap <Right> <C-W><Right>
+
+" Show hidden chars as specified by listchars (e.g. tabs, trailing space)
+nmap <silent> <leader>s :set list!<CR>
+
+" Strip trailing whitespace
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+
+" Quick-edit .vimrc
+nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 
 " Convert to Ruby 1.9 hash syntax
 noremap <leader>9 :s/:\(\S\+\)\s\+=>\s\+/\1: /g<cr>
@@ -161,6 +175,7 @@ map <leader>r :wall \| :call Send_to_Tmux("time rspec -f d " . g:specFile . "\n"
 " Reselect visual block after indent (thanks @twe4ked)
 vnoremap < <gv
 vnoremap > >gv
+
 
 """"""""""
 " Abbreviations
