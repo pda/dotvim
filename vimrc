@@ -108,6 +108,7 @@ nmap <Left> <C-W><Left>
 nmap <Right> <C-W><Right>
 
 " Mouse for scrolling etc in console.
+" a = normal + visual + insert + command-line + help files
 set mouse=a
 
 " Resize split panes with mouse within tmux.
