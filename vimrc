@@ -135,9 +135,6 @@ set clipboard=unnamed
 """"""""""
 " File types
 
-" Default assembler syntax
-let asmsyntax = "armasm"
-
 " PHP whitespace: four space indentation
 autocmd FileType php setlocal sts=4 ts=4 sw=4 expandtab
 
