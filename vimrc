@@ -190,9 +190,6 @@ nnoremap <leader>gm :CtrlP app/models/<cr>
 nnoremap <leader>gv :CtrlP app/views/<cr>
 nnoremap <leader>gc :CtrlP app/controllers/<cr>
 
-" Ack (deliberate trailing whitespace)
-" nnoremap <leader>a :Ack 
-
 " NERDTree
 nmap <silent> <leader>n :NERDTreeToggle<CR>
 
