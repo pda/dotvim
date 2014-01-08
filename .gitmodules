@@ -49,3 +49,6 @@
 [submodule "bundle/arduino-syntax"]
 	path = bundle/arduino-syntax
 	url = git://github.com/sudar/vim-arduino-syntax
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = git://github.com/elzr/vim-json
