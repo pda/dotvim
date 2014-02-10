@@ -123,7 +123,7 @@ autocmd FileType php setlocal sts=4 ts=4 sw=4 expandtab
 " Flex: lex-style syntax, indentation as 4 spaces.
 autocmd BufRead,BufNewFile *.flex setlocal ft=lex sts=4 ts=4 sw=4 expandtab
 
-" Shell scripts are posix (same as ksh mode, similar to bas modeh)
+" Shell scripts are posix (same as ksh mode, similar to bash mode)
 " Fixes some syntx highlighting errors like A=$(subcommand)
 " See: https://github.com/b4winckler/vim/blob/9592d73105979470e22662bc21fe7433f13626c0/runtime/syntax/sh.vim#L269-L274
 let g:is_posix=1
