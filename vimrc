@@ -117,7 +117,11 @@ set clipboard=unnamed
 """"""""""
 " File types
 
+" Go (golang) whitespace: real tabs.
+autocmd FileType go setlocal sts=4 ts=4 sw=4 noexpandtab
+
 " PHP whitespace: four space indentation
+" https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
 autocmd FileType php setlocal sts=4 ts=4 sw=4 expandtab
 
 " Flex: lex-style syntax, indentation as 4 spaces.
