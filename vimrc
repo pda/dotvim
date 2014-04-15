@@ -233,3 +233,7 @@ let g:airline_mode_map = {
   \ 'c' : 'CMD   ',
   \ '': 'V-BLCK',
   \ }
+
+" vim-json
+" Disable crazy quote concealing. Show the actual file.
+let g:vim_json_syntax_conceal = 0
