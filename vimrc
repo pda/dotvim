@@ -124,6 +124,10 @@ autocmd FileType go setlocal sts=4 ts=4 sw=4 noexpandtab
 " https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
 autocmd FileType php setlocal sts=4 ts=4 sw=4 expandtab
 
+" Python whitespace: four space indentation.
+" http://legacy.python.org/dev/peps/pep-0008/#tabs-or-spaces
+autocmd FileType python setlocal sts=4 ts=4 sw=4 expandtab
+
 " Flex: lex-style syntax, indentation as 4 spaces.
 autocmd BufRead,BufNewFile *.flex setlocal ft=lex sts=4 ts=4 sw=4 expandtab
 
