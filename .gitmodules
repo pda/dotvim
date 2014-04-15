@@ -55,3 +55,6 @@
 [submodule "bundle/dockerfile"]
 	path = bundle/dockerfile
 	url = git://github.com/ekalinin/Dockerfile.vim
+[submodule "bundle/asmM6502"]
+	path = bundle/asmM6502
+	url = git://github.com/vim-scripts/asmM6502.vim
