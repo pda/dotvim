@@ -4,6 +4,10 @@
 " https://github.com/tpope/vim-pathogen
 runtime bundle/pathogen/autoload/pathogen.vim
 execute pathogen#infect()
+if !empty($GOROOT)
+  let g:golang_present = 1
+  set runtimepath+=$GOROOT/misc/vim
+endif
 filetype plugin indent on
 
 
@@ -237,3 +241,8 @@ let g:airline_mode_map = {
 " vim-json
 " Disable crazy quote concealing. Show the actual file.
 let g:vim_json_syntax_conceal = 0
+
+" golang
+if exists("g:golang_present")
+  autocmd FileType go autocmd BufWritePre <buffer> Fmt
+endif
