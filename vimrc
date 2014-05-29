@@ -245,4 +245,7 @@ let g:vim_json_syntax_conceal = 0
 " golang
 if exists("g:golang_present")
   autocmd FileType go autocmd BufWritePre <buffer> Fmt
+  if executable("goimports")
+    let g:gofmt_command ="goimports"
+  endif
 endif
