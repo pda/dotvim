@@ -27,7 +27,7 @@
 	url = git://github.com/pda/tslime.vim.git
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
-	url = git://github.com/kien/ctrlp.vim.git
+	url = git://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "bundle/jellybeans"]
 	path = bundle/jellybeans
 	url = git://github.com/nanotech/jellybeans.vim.git
