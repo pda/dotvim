@@ -4,10 +4,6 @@
 " https://github.com/tpope/vim-pathogen
 runtime bundle/pathogen/autoload/pathogen.vim
 execute pathogen#infect()
-if !empty($GOROOT)
-  let g:golang_present = 1
-  set runtimepath+=$GOROOT/misc/vim
-endif
 filetype plugin indent on
 
 
@@ -120,9 +116,6 @@ set clipboard=unnamed
 
 """"""""""
 " File types
-
-" Go (golang) whitespace: real tabs.
-autocmd FileType go setlocal sts=4 ts=4 sw=4 noexpandtab
 
 " PHP whitespace: four space indentation
 " https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
@@ -242,10 +235,7 @@ let g:airline_mode_map = {
 " Disable crazy quote concealing. Show the actual file.
 let g:vim_json_syntax_conceal = 0
 
-" golang
-if exists("g:golang_present")
-  autocmd FileType go autocmd BufWritePre <buffer> Fmt
-  if executable("goimports")
-    let g:gofmt_command ="goimports"
-  endif
+" vim-go
+if executable("goimports")
+  let g:go_fmt_command = "goimports"
 endif
