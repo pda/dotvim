@@ -34,9 +34,6 @@
 [submodule "bundle/eunuch"]
 	path = bundle/eunuch
 	url = git://github.com/tpope/vim-eunuch.git
-[submodule "bundle/golang"]
-	path = bundle/golang
-	url = git://github.com/jnwhiteh/vim-golang.git
 [submodule "bundle/airline"]
 	path = bundle/airline
 	url = https://github.com/bling/vim-airline
