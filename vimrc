@@ -173,6 +173,9 @@ nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 " Convert to Ruby 1.9 hash syntax
 noremap <leader>9 :s/:\(\S\+\)\s\+=>\s\+/\1: /g<cr>
 
+" Convert Ruby hash from Symbol keys to String keys
+noremap <leader>hs :s/\([A-Za-z0-9_]\+\):\(\s\+\)/"\1" =>\2/g<cr>
+
 " Convert CSS `squished:rule;  ` into `nice: rule;`
 noremap <leader>c :s/^\(\s*\)\([a-z-]\+\):\([^ \t].*\);\s*$/\1\2: \3;/<cr>
 
