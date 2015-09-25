@@ -190,18 +190,22 @@ vnoremap > >gv
 """"""""""
 " Abbreviations
 
+abbreviate goerr if err != nil {return err}
 abbreviate pry! require "pry"; binding.pry
-
 
 """"""""""
 " Plugins
 
 " ctrlp.vim
+let g:ctrlp_arg_map = 1 " prompt for open mode
 let g:ctrlp_max_height = 16
 let g:ctrlp_custom_ignore = ''
 let g:ctrlp_custom_ignore .= '/\..*/\|'
 let g:ctrlp_custom_ignore .= '/tmp/\|'
+let g:ctrlp_custom_ignore .= '/assets/\|'
+let g:ctrlp_custom_ignore .= '/node_modules/\|'
 let g:ctrlp_custom_ignore .= 'REGEX_TERMINATOR'
+nnoremap <leader>ga :CtrlP app/<cr>
 nnoremap <leader>gs :CtrlP spec/<cr>
 nnoremap <leader>gm :CtrlP app/models/<cr>
 nnoremap <leader>gv :CtrlP app/views/<cr>
