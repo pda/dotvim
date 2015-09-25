@@ -128,6 +128,10 @@ autocmd FileType php setlocal sts=4 ts=4 sw=4 expandtab
 " http://legacy.python.org/dev/peps/pep-0008/#tabs-or-spaces
 autocmd FileType python setlocal sts=4 ts=4 sw=4 expandtab
 
+" Ruby ERB template whitespace: four space indentation
+" (99designs style guide)
+autocmd FileType eruby setlocal sts=4 ts=4 sw=4 expandtab
+
 " Flex: lex-style syntax, indentation as 4 spaces.
 autocmd BufRead,BufNewFile *.flex setlocal ft=lex sts=4 ts=4 sw=4 expandtab
 
