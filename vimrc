@@ -169,12 +169,6 @@ noremap <leader>9 :s/:\(\S\+\)\s\+=>\s\+/\1: /g<cr>
 " Convert CSS `squished:rule;  ` into `nice: rule;`
 noremap <leader>c :s/^\(\s*\)\([a-z-]\+\):\([^ \t].*\);\s*$/\1\2: \3;/<cr>
 
-" Split screen into three.
-noremap <leader>3 <C-w>v<C-w>v
-
-" Split screen into 3 x 2 grid.
-map <leader>6 <C-w>v<C-w>v<Right><Right><C-w>s<Left><C-w>s<Left><C-w>s
-
 " Send "!!" to tmux, to repeat last shell command.
 map <leader>!! :wall \| call Send_to_Tmux("!!\n")<cr>
 
