@@ -52,3 +52,6 @@
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = git://github.com/fatih/vim-go
+[submodule "bundle/yajs"]
+	path = bundle/yajs
+	url = git://github.com/othree/yajs.vim
