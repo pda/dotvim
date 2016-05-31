@@ -99,8 +99,9 @@ set mouse=a
 
 " Resize split panes with mouse within tmux.
 " Also get live-updated text selection with mouse drag.
-" xterm2: like xterm, plus report position during drag.
-set ttymouse=xterm2
+" sgr: backwards compatible with xterm2 mode but works beyond 223 columns.
+set ttymouse=sgr
+
 
 " Mapping and escape timeouts.
 set timeout
