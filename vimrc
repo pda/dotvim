@@ -117,8 +117,9 @@ set clipboard=unnamed
 """"""""""
 " File types
 
-" JS whitespace: four space indentation
+" Front-end whitespace: four space indentation
 autocmd FileType javascript setlocal sts=4 ts=4 sw=4 expandtab
+autocmd FileType scss setlocal sts=4 ts=4 sw=4 expandtab
 
 " PHP whitespace: four space indentation
 " https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
