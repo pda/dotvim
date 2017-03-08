@@ -187,6 +187,8 @@ noremap <leader>c :s/^\(\s*\)\([a-z-]\+\):\([^ \t].*\);\s*$/\1\2: \3;/<cr>
 " Send "!!" to tmux, to repeat last shell command.
 map <leader>!! :wall \| call Send_to_Tmux("!!\n")<cr>
 
+map <leader>m :wall \| :call Send_to_Tmux("make\n")<CR>
+
 " Set a current spec file with R, execute it via tmux with r.
 map <leader>R :let g:specFile = @% \| echo "RSpec file: " . g:specFile<CR>
 map <leader>r :wall \| :call Send_to_Tmux("time rspec -f d " . g:specFile . "\n")<CR>
