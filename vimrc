@@ -36,6 +36,10 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 
+" (1s: indent 1 * shiftwidth within parentheses; default 2 * shiftwidth.
+" m1: closing parenthesis on new line matches indentation of opening line.
+set cinoptions=(1s,m1
+
 " Allow backspacing over indents and start of insertion point.
 set backspace=indent,start
 
