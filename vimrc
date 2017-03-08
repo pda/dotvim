@@ -113,9 +113,8 @@ set timeoutlen=1000 " mapped sequences
 set ttimeoutlen=10  " escape sequence delay
 
 " Link vim's default delete/yank register to the system clipboard.
-" When the "unnamed" string is included in the 'clipboard' option, the unnamed
-" register is the same as the "* register.  Thus you can yank to and paste the
-" selection without prepending "* to commands.
+" unnamed     = "* = PRIMARY buffer in X.
+" unnamedplus = "+ = CLIPBOARD buffer in X.
 set clipboard=unnamed
 
 
