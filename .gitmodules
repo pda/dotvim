@@ -55,3 +55,6 @@
 [submodule "bundle/yajs"]
 	path = bundle/yajs
 	url = git://github.com/othree/yajs.vim
+[submodule "bundle/vim-elixir"]
+	path = bundle/vim-elixir
+	url = git://github.com/elixir-lang/vim-elixir
