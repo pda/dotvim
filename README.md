@@ -1,5 +1,6 @@
-~pda/.vim/
-==========
+# 💀💀💀 ~pda/.vim/ 💀💀💀
+
+💀💀💀 **switched to Neovim; see [pda/config-neovim](https://github.com/pda/config-neovim)** 💀💀💀
 
 Nicely commented [.vimrc][vimrc], 256-color,
 and a [useful set of plugins][gitmodules] managed by [pathogen][pathogen].
